@@ -24,3 +24,12 @@ const [strReader, strSetter] = simpleStringState('damon');
 console.log('strReader: ', strReader());
 strSetter('ella');
 console.log('strReader: ', strReader());
+
+// typeical example
+function getUser(): [string, string] {
+    return ['a', 'b'];
+}
+
+const [_, id] = getUser(); // looks like useState 😂😂 ??
+console.log("underscore tuple: ", _);
+console.log("normal tuple value: ", id);
